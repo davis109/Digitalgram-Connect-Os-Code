@@ -1,0 +1,108 @@
+{
+  "app": {
+    "title": "GlobalNotify",
+    "subtitle": "Smart Community Notice Board",
+    "status": {
+      "online": "Online",
+      "offline": "Offline",
+      "audioReady": "Audio Ready"
+    }
+  },
+  "nav": {
+    "board": "Notice Board",
+    "admin": "Admin Panel",
+    "feedback": "Voice Feedback"
+  },
+  "noticeBoard": {
+    "title": "Digital Notice Board",
+    "subtitle": "Stay informed with official announcements from your community",
+    "search": "Search notices...",
+    "filter": "Filter by category",
+    "categories": {
+      "all": "All Notices",
+      "emergency": "Emergency",
+      "agriculture": "Agriculture",
+      "health": "Health",
+      "education": "Education",
+      "schemes": "Government Schemes",
+      "weather": "Weather",
+      "employment": "Employment",
+      "public": "Public"
+    },
+    "emergencyAlerts": "Emergency Alerts",
+    "noNotices": "No notices found",
+    "adjustSearch": "Try adjusting your search terms",
+    "noCategory": "No notices available in this category",
+    "audioEnabled": "Audio enabled",
+    "noticeCount": "Notices: {{count}}",
+    "lastUpdated": "Last updated: {{date}}"
+  },
+  "noticeCard": {
+    "playAudio": "Play Audio",
+    "stopAudio": "Stop Audio",
+    "validUntil": "Valid until",
+    "postedBy": "Posted by",
+    "download": "Download as PDF",
+    "viewQR": "View QR Code",
+    "delete": "Delete Notice"
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "subtitle": "Create and manage community notices",
+    "createNotice": "Create New Notice",
+    "noticeStats": "Notice Statistics",
+    "totalNotices": "Total Notices",
+    "activeNotices": "Active Notices",
+    "expiredNotices": "Expired Notices",
+    "emergencyNotices": "Emergency Notices",
+    "form": {
+      "title": "Notice Title",
+      "content": "Notice Content",
+      "category": "Category",
+      "priority": "Priority",
+      "language": "Language",
+      "isEmergency": "Mark as Emergency",
+      "validUntil": "Valid Until (Optional)",
+      "submit": "Create Notice",
+      "cancel": "Cancel",
+      "preview": "Preview"
+    }
+  },
+  "feedback": {
+    "title": "Voice Feedback System",
+    "subtitle": "Share your opinions about community notices",
+    "startRecording": "Start Recording",
+    "stopRecording": "Stop Recording",
+    "playRecording": "Play Recording",
+    "deleteRecording": "Delete Recording",
+    "addText": "Add Text (Optional)",
+    "submit": "Submit Feedback",
+    "previousFeedback": "Previous Feedback",
+    "noFeedback": "No feedback submitted yet",
+    "recordingStatus": "Recording...",
+    "recordingPermission": "Please allow microphone access to record feedback"
+  },
+  "footer": {
+    "tagline": "Smart Community Notice Board",
+    "description": "Empowering communities with digital communication • Audio-enabled • Offline-ready",
+    "features": {
+      "agriculture": "Agriculture Updates",
+      "health": "Health Alerts",
+      "public": "Public Notices",
+      "voice": "Voice Feedback"
+    }
+  },
+  "sync": {
+    "syncing": "Syncing...",
+    "error": "Sync failed",
+    "lastSync": "Last synced",
+    "pendingChanges": "Sync {{count}} changes"
+  },
+  "errors": {
+    "loadingFailed": "Failed to load notices",
+    "createFailed": "Failed to create notice",
+    "audioFailed": "Failed to play audio",
+    "recordingFailed": "Failed to start recording",
+    "submissionFailed": "Failed to submit feedback"
+  }
+}
