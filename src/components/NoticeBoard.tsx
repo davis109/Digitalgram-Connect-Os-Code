@@ -43,14 +43,14 @@ const NoticeBoard: React.FC = () => {
     { value: 'public', label: 'Public', icon: '📢' }
   ];
 
+  const emergencyNotices = getEmergencyNotices();
+  
   const filteredNotices = notices.filter(notice => {
     const matchesCategory = selectedCategory === 'all' || notice.category === selectedCategory;
     const matchesSearch = notice.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          notice.content.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesCategory && matchesSearch;
   });
-
-  const emergencyNotices = getEmergencyNotices();
 
   if (loading) {
     return (
