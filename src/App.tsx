@@ -73,17 +73,17 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 fade-in">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-200">
+      <header className="bg-white shadow-sm border-b border-gray-200 shimmer-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <Home className="w-8 h-8 text-green-600" />
+                <Home className="w-8 h-8 text-green-600 enhanced-pulse" />
               </div>
               <div className="ml-3">
-                <h1 className="text-xl font-bold text-gray-900">{t('app.title')}</h1>
+                <h1 className="text-xl font-bold text-gray-900 shimmer-bg px-2 py-1 rounded-md">{t('app.title')}</h1>
                 <p className="text-sm text-gray-500">{t('app.subtitle')}</p>
               </div>
             </div>

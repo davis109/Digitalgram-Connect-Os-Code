@@ -59,6 +59,25 @@ const NoticeBoard: React.FC = () => {
           <div className="w-8 h-8 border-4 border-green-600 border-t-transparent rounded-full animate-spin mx-auto mb-4" />
           <p className="text-gray-600">Loading notices...</p>
         </div>
+
+        {/* Emergency Notices with Marquee Effect */}
+        {emergencyNotices.length > 0 && (
+          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mt-4 emergency-notice">
+            <div className="flex items-center mb-2">
+              <AlertTriangle className="w-5 h-5 text-red-600 mr-2 enhanced-pulse" />
+              <h3 className="text-lg font-bold text-red-800">Emergency Alerts</h3>
+            </div>
+            <div className="marquee-container overflow-hidden">
+              <div className="marquee">
+                {emergencyNotices.map(notice => (
+                  <span key={notice.id} className="inline-block px-4 py-2 mr-6 bg-white rounded-md shadow-sm border-l-4 border-red-500">
+                    <strong>{notice.title}</strong> - {notice.content.substring(0, 100)}...
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     );
   }
@@ -75,54 +94,83 @@ const NoticeBoard: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="bg-white rounded-lg shadow-md p-6">
+      <div className="bg-white rounded-lg shadow-md p-6 vibrant-overlay-blue card-hover-effect">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-3xl font-bold text-gray-900 flex items-center">
-            <Bell className="w-8 h-8 mr-3 text-green-600" />
+            <Bell className="w-8 h-8 mr-3 text-green-600 enhanced-pulse" />
             Digital Notice Board
           </h1>
           <div className="flex items-center space-x-2">
             {isOnline ? (
-              <div className="flex items-center text-green-600">
+              <div className="flex items-center text-green-600 shimmer-bg px-2 py-1 rounded-full">
                 <Wifi className="w-5 h-5 mr-1" />
-                <span className="text-sm">Online</span>
+                <span className="text-sm font-medium">Online</span>
               </div>
             ) : (
-              <div className="flex items-center text-orange-600">
+              <div className="flex items-center text-orange-600 shimmer-bg px-2 py-1 rounded-full">
                 <WifiOff className="w-5 h-5 mr-1" />
-                <span className="text-sm">Offline Mode</span>
+                <span className="text-sm font-medium">Offline Mode</span>
               </div>
             )}
           </div>
         </div>
         
+        {/* Emergency Notices with Marquee Effect */}
+        {emergencyNotices.length > 0 && (
+          <div className="bg-red-50 border border-red-200 rounded-lg p-4 mt-4 emergency-notice">
+            <div className="flex items-center mb-2">
+              <AlertTriangle className="w-5 h-5 text-red-600 mr-2 enhanced-pulse" />
+              <h3 className="text-lg font-bold text-red-800">Emergency Alerts</h3>
+            </div>
+            <div className="marquee-container overflow-hidden">
+              <div className="marquee">
+                {emergencyNotices.map(notice => (
+                  <span key={notice.id} className="inline-block px-4 py-2 mr-6 bg-white rounded-md shadow-sm border-l-4 border-red-500">
+                    <strong>{notice.title}</strong> - {notice.content.substring(0, 100)}...
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+        
         <p className="text-gray-600 mb-4">
-          Stay informed with official announcements from your Gram Panchayat
+          Stay informed with official announcements from your community
         </p>
+        
+        {/* Audio indicator */}
+        <div className="flex items-center text-green-600 mb-4">
+          <Volume2 className="w-5 h-5 mr-2" />
+          <span className="text-sm font-medium shimmer-bg px-2 py-1 rounded-full">Audio enabled for all notices</span>
+        </div>
 
         {/* Search and Filter */}
-        <div className="flex flex-col sm:flex-row gap-4">
-          <div className="flex-1 relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div className="relative flex-1">
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <Search className="h-5 w-5 text-gray-400" />
+            </div>
             <input
               type="text"
               placeholder="Search notices..."
+              className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm transition-all duration-300 hover:shadow-md focus:shadow-md"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
             />
           </div>
           
-          <div className="flex items-center space-x-2">
-            <Filter className="w-5 h-5 text-gray-400" />
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <Filter className="h-5 w-5 text-gray-400" />
+            </div>
             <select
+              className="block w-full pl-10 pr-10 py-2 text-base border border-gray-300 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm rounded-md transition-all duration-300 hover:shadow-md shimmer-bg"
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value as NoticeCategory | 'all')}
-              className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
             >
-              {categories.map(cat => (
-                <option key={cat.value} value={cat.value}>
-                  {cat.icon} {cat.label}
+              {categories.map((category) => (
+                <option key={category.value} value={category.value}>
+                  {category.icon} {category.label}
                 </option>
               ))}
             </select>
@@ -145,43 +193,30 @@ const NoticeBoard: React.FC = () => {
         </div>
       )}
 
-      {/* Notice Grid */}
-      <div className="grid gap-6">
-        {filteredNotices.length === 0 ? (
-          <div className="text-center py-12">
-            <Bell className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-gray-600 mb-2">No notices found</h3>
-            <p className="text-gray-500">
-              {searchTerm ? 'Try adjusting your search terms' : 'No notices available in this category'}
-            </p>
-          </div>
-        ) : (
-          filteredNotices.map(notice => (
-            <NoticeCard key={notice.id} notice={notice} />
+      {/* Notice Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filteredNotices.length > 0 ? (
+          filteredNotices.map((notice, index) => (
+            <div key={notice.id} className="fade-in card-hover-effect" style={{animationDelay: `${index * 0.1}s`}}>
+              <NoticeCard notice={notice} />
+            </div>
           ))
+        ) : (
+          <div className="col-span-full bg-white rounded-lg shadow-md p-6 text-center vibrant-overlay-blue">
+            <p className="text-gray-600 mb-2">
+              {selectedCategory !== 'all' ? 'No notices available in this category' : 'No notices found'}
+            </p>
+            {searchTerm && (
+              <p className="text-gray-500 text-sm">Try adjusting your search terms</p>
+            )}
+          </div>
         )}
       </div>
-
-      {/* Footer Info */}
-      <div className="bg-gray-50 rounded-lg p-4 text-center">
-        <div className="flex items-center justify-center space-x-4 text-sm text-gray-600">
-          <div className="flex items-center">
-            <Volume2 className="w-4 h-4 mr-1" />
-            <span>Audio enabled</span>
-          </div>
-          <div className="flex items-center">
-            <span>•</span>
-          </div>
-          <div>
-            <span>Notices: {filteredNotices.length}</span>
-          </div>
-          <div className="flex items-center">
-            <span>•</span>
-          </div>
-          <div>
-            <span>Last updated: {new Date().toLocaleDateString()}</span>
-          </div>
-        </div>
+      
+      {/* Notice count and last updated */}
+      <div className="bg-white rounded-lg shadow-sm p-4 flex justify-between items-center text-sm text-gray-500">
+        <div>Notices: {filteredNotices.length}</div>
+        <div className="shimmer-bg px-2 py-1 rounded-full">Last updated: {new Date().toLocaleString()}</div>
       </div>
     </div>
   );

@@ -1,0 +1,139 @@
+/* Marquee and Animation Effects for GlobalNotify */
+
+/* Marquee animation for emergency notices */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Pulse animation for important elements */
+@keyframes enhanced-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.05); }
+}
+
+/* Shimmer effect for cards and buttons */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Fade in animation for notices */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Attention grabber animation */
+@keyframes attention {
+  0%, 100% { transform: translateY(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateY(-2px); }
+  20%, 40%, 60%, 80% { transform: translateY(2px); }
+}
+
+/* Utility classes */
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee-reverse {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee-reverse 15s linear infinite;
+}
+
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.enhanced-pulse {
+  animation: enhanced-pulse 2s infinite;
+}
+
+.shimmer-bg {
+  background: linear-gradient(90deg, 
+    rgba(255,255,255,0) 0%, 
+    rgba(255,255,255,0.8) 50%, 
+    rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+.fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.attention {
+  animation: attention 1s ease-in-out;
+}
+
+/* Vibrant but professional color overlays */
+.vibrant-overlay-green {
+  position: relative;
+}
+
+.vibrant-overlay-green::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0,128,0,0.05) 0%, rgba(0,255,0,0.1) 100%);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.vibrant-overlay-blue {
+  position: relative;
+}
+
+.vibrant-overlay-blue::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0,0,128,0.05) 0%, rgba(0,128,255,0.1) 100%);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* Emergency notice styling */
+.emergency-notice {
+  position: relative;
+  overflow: hidden;
+}
+
+.emergency-notice::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ff0000, #ff8800, #ff0000);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Professional card hover effects */
+.card-hover-effect {
+  transition: all 0.3s ease;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}

@@ -79,8 +79,8 @@ const NoticeCard: React.FC<NoticeCardProps> = ({ notice, showActions = true, onD
   };
 
   return (
-    <div className={`bg-white rounded-lg shadow-md border-l-4 p-6 transition-all duration-300 hover:shadow-lg ${
-      notice.isEmergency ? 'border-l-red-500 bg-red-50' : 'border-l-green-500'
+    <div className={`bg-white rounded-lg shadow-md border-l-4 p-6 transition-all duration-300 hover:shadow-lg card-hover-effect ${
+      notice.isEmergency ? 'border-l-red-500 bg-red-50 emergency-notice' : 'border-l-green-500 vibrant-overlay-green'
     }`}>
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center space-x-2">
@@ -89,7 +89,7 @@ const NoticeCard: React.FC<NoticeCardProps> = ({ notice, showActions = true, onD
             {notice.category.toUpperCase()}
           </span>
           {notice.isEmergency && (
-            <span className="px-2 py-1 text-xs font-bold bg-red-100 text-red-800 rounded-full border border-red-200 animate-pulse">
+            <span className="px-2 py-1 text-xs font-bold bg-red-100 text-red-800 rounded-full border border-red-200 enhanced-pulse">
               EMERGENCY
             </span>
           )}
