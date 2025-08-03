@@ -1,7 +1,7 @@
-# GlobalNotify - Smart Community Notice Board
+# Digitalgram Connect - Smart Community Notice Board
 
 ## Project Overview
-GlobalNotify is a modern, accessible digital notice board application designed for communities worldwide. It enables efficient information dissemination through multiple channels including visual displays, audio announcements, and offline access capabilities.
+Digitalgram Connect is a modern, accessible digital notice board application designed for communities worldwide. It enables efficient information dissemination through multiple channels including visual displays, audio announcements, and offline access capabilities.
 
 ## Key Features
 - **Multi-language Support**: Content in multiple languages with text-to-speech capabilities
@@ -31,7 +31,7 @@ GlobalNotify is a modern, accessible digital notice board application designed f
 git clone [repository-url]
 
 # Navigate to project directory
-cd globalnotify
+cd digitalgram-connect
 
 # Install dependencies
 npm install

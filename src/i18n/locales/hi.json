@@ -1,0 +1,101 @@
+{
+  "app": {
+    "title": "डिजिटलग्राम कनेक्ट",
+    "subtitle": "स्मार्ट सामुदायिक नोटिस बोर्ड",
+    "status": {
+      "online": "ऑनलाइन",
+      "offline": "ऑफ़लाइन",
+      "audioReady": "ऑडियो तैयार"
+    }
+  },
+  "nav": {
+    "board": "नोटिस बोर्ड",
+    "admin": "एडमिन पैनल",
+    "feedback": "आवाज़ फीडबैक"
+  },
+  "noticeBoard": {
+    "title": "डिजिटल नोटिस बोर्ड",
+    "subtitle": "अपने समुदाय की आधिकारिक घोषणाओं से अवगत रहें",
+    "search": "नोटिस खोजें...",
+    "filter": "श्रेणी के अनुसार फ़िल्टर करें",
+    "categories": {
+      "all": "सभी नोटिस",
+      "emergency": "आपातकालीन",
+      "agriculture": "कृषि",
+      "health": "स्वास्थ्य",
+      "education": "शिक्षा",
+      "schemes": "सरकारी योजनाएं",
+      "weather": "मौसम",
+      "employment": "रोज़गार",
+      "public": "सार्वजनिक"
+    },
+    "emergencyAlerts": "आपातकालीन अलर्ट",
+    "noNotices": "कोई नोटिस नहीं मिला",
+    "adjustSearch": "अपने खोज शब्दों को समायोजित करें",
+    "noCategory": "इस श्रेणी में कोई नोटिस उपलब्ध नहीं है",
+    "audioEnabled": "ऑडियो सक्षम",
+    "noticeCount": "नोटिस: {{count}}",
+    "lastUpdated": "अंतिम अपडेट: {{date}}"
+  },
+  "noticeCard": {
+    "playAudio": "ऑडियो चलाएं",
+    "stopAudio": "ऑडियो रोकें",
+    "validUntil": "वैध तिथि",
+    "postedBy": "पोस्ट किया गया",
+    "download": "PDF डाउनलोड करें",
+    "viewQR": "QR कोड देखें",
+    "delete": "नोटिस हटाएं"
+  },
+  "admin": {
+    "title": "एडमिन पैनल",
+    "subtitle": "सामुदायिक नोटिस बनाएं और प्रबंधित करें",
+    "createNotice": "नया नोटिस बनाएं",
+    "noticeStats": "नोटिस सांख्यिकी",
+    "totalNotices": "कुल नोटिस",
+    "activeNotices": "सक्रिय नोटिस",
+    "expiredNotices": "समाप्त नोटिस",
+    "emergencyNotices": "आपातकालीन नोटिस",
+    "form": {
+      "title": "नोटिस शीर्षक",
+      "content": "नोटिस सामग्री",
+      "category": "श्रेणी",
+      "priority": "प्राथमिकता",
+      "language": "भाषा",
+      "isEmergency": "आपातकालीन के रूप में चिह्नित करें",
+      "validUntil": "वैध तिथि तक (वैकल्पिक)",
+      "submit": "नोटिस बनाएं",
+      "cancel": "रद्द करें",
+      "preview": "पूर्वावलोकन"
+    }
+  },
+  "feedback": {
+    "title": "आवाज़ फीडबैक सिस्टम",
+    "subtitle": "सामुदायिक नोटिस के बारे में अपनी राय साझा करें",
+    "startRecording": "रिकॉर्डिंग शुरू करें",
+    "stopRecording": "रिकॉर्डिंग रोकें",
+    "playRecording": "रिकॉर्डिंग चलाएं",
+    "deleteRecording": "रिकॉर्डिंग हटाएं",
+    "addText": "टेक्स्ट जोड़ें (वैकल्पिक)",
+    "submit": "फीडबैक सबमिट करें",
+    "previousFeedback": "पिछला फीडबैक",
+    "noFeedback": "अभी तक कोई फीडबैक सबमिट नहीं किया गया",
+    "recordingStatus": "रिकॉर्डिंग...",
+    "recordingPermission": "फीडबैक रिकॉर्ड करने के लिए माइक्रोफ़ोन एक्सेस की अनुमति दें"
+  },
+  "footer": {
+    "tagline": "स्मार्ट सामुदायिक नोटिस बोर्ड",
+    "description": "डिजिटल संचार के साथ समुदायों को सशक्त बनाना • ऑडियो-सक्षम • ऑफ़लाइन-तैयार",
+    "features": {
+      "agriculture": "कृषि अपडेट",
+      "health": "स्वास्थ्य अलर्ट",
+      "public": "सार्वजनिक नोटिस",
+      "voice": "आवाज़ फीडबैक"
+    }
+  },
+  "sync": {
+    "syncing": "सिंक हो रहा है...",
+    "error": "सिंक विफल",
+    "lastSync": "अंतिम सिंक",
+    "pendingChanges": "{{count}} परिवर्तन सिंक करें"
+  }
+}
