@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { VoiceFeedback as VoiceFeedbackType } from '../types';
 import { OfflineManager } from '../utils/offlineManager';
+import voiceIcon from '../assets/voice-icon.svg';
 
 const VoiceFeedback: React.FC = () => {
   const [isRecording, setIsRecording] = useState(false);
@@ -103,7 +104,7 @@ const VoiceFeedback: React.FC = () => {
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
       <div className="flex items-center mb-6">
-        <MessageCircle className="w-6 h-6 text-blue-600 mr-2" />
+        <img src={voiceIcon} alt="Voice" className="w-6 h-6 text-blue-600 mr-2" />
         <h2 className="text-2xl font-bold text-gray-900">Voice Feedback</h2>
       </div>
 

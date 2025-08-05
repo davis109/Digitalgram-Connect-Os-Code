@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60" fill="none">
+  <rect width="60" height="60" rx="10" fill="#3B82F6"/>
+  <path d="M15 30C15 21.7157 21.7157 15 30 15C38.2843 15 45 21.7157 45 30C45 38.2843 38.2843 45 30 45C21.7157 45 15 38.2843 15 30Z" fill="white"/>
+  <path d="M25 20L35 30L25 40" stroke="#3B82F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#3B82F6">Digitalgram</text>
+  <text x="70" y="50" font-family="Arial, sans-serif" font-size="14" fill="#64748B">Connect</text>
+</svg>

@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { NoticeCategory, NoticePriority } from '../types';
 import { useNotices } from '../hooks/useNotices';
+import adminIcon from '../assets/admin-icon.svg';
 
 const AdminPanel: React.FC = () => {
   const [isCreating, setIsCreating] = useState(false);
@@ -94,7 +95,7 @@ const AdminPanel: React.FC = () => {
     <div className="bg-white rounded-lg shadow-md p-6">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-bold text-gray-900 flex items-center">
-          <FileText className="w-6 h-6 mr-2 text-green-600" />
+          <img src={adminIcon} alt="Admin" className="w-6 h-6 mr-2 text-green-600" />
           Admin Panel
         </h2>
         <div className="flex items-center space-x-4">

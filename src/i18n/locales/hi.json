@@ -11,7 +11,12 @@
   "nav": {
     "board": "नोटिस बोर्ड",
     "admin": "एडमिन पैनल",
-    "feedback": "आवाज़ फीडबैक"
+    "feedback": "आवाज़ फीडबैक",
+    "home": "होम",
+    "chat": "चैट",
+    "profile": "प्रोफाइल",
+    "login": "लॉगिन",
+    "openMenu": "मेनू खोलें"
   },
   "noticeBoard": {
     "title": "डिजिटल नोटिस बोर्ड",
@@ -97,5 +102,90 @@
     "error": "सिंक विफल",
     "lastSync": "अंतिम सिंक",
     "pendingChanges": "{{count}} परिवर्तन सिंक करें"
+  },
+  "errors": {
+    "loadingFailed": "नोटिस लोड करने में विफल",
+    "createFailed": "नोटिस बनाने में विफल",
+    "audioFailed": "ऑडियो चलाने में विफल",
+    "recordingFailed": "रिकॉर्डिंग शुरू करने में विफल",
+    "submissionFailed": "फीडबैक सबमिट करने में विफल"
+  },
+  "appName": "डिजिटलग्राम कनेक्ट",
+  "login": {
+    "title": "लॉगिन",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "loginButton": "लॉगिन करें",
+    "loggingIn": "लॉगिन हो रहा है...",
+    "errorAllFields": "कृपया सभी फ़ील्ड भरें",
+    "errorGeneric": "लॉगिन विफल। कृपया पुनः प्रयास करें।",
+    "noAccount": "खाता नहीं है?",
+    "registerLink": "रजिस्टर करें"
+  },
+  "register": {
+    "title": "रजिस्टर",
+    "name": "नाम",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "preferredLanguage": "पसंदीदा भाषा",
+    "registerButton": "रजिस्टर करें",
+    "registering": "रजिस्टर हो रहा है...",
+    "errorAllFields": "कृपया सभी फ़ील्ड भरें",
+    "errorPasswordMatch": "पासवर्ड मेल नहीं खाते",
+    "errorPasswordLength": "पासवर्ड कम से कम 6 अक्षर का होना चाहिए",
+    "errorGeneric": "रजिस्ट्रेशन विफल। कृपया पुनः प्रयास करें।",
+    "haveAccount": "पहले से ही खाता है?",
+    "loginLink": "लॉगिन करें",
+    "passwordHint": "कम से कम 6 अक्षर होने चाहिए"
+  },
+  "profile": {
+    "title": "आपकी प्रोफाइल",
+    "email": "ईमेल",
+    "name": "नाम",
+    "preferredLanguage": "पसंदीदा भाषा",
+    "updateButton": "प्रोफाइल अपडेट करें",
+    "updating": "अपडेट हो रहा है...",
+    "updateSuccess": "प्रोफाइल सफलतापूर्वक अपडेट की गई",
+    "updateError": "प्रोफाइल अपडेट करने में विफल",
+    "logoutButton": "लॉगआउट करें",
+    "confirmLogout": "क्या आप वाकई लॉगआउट करना चाहते हैं?",
+    "emailCannotChange": "ईमेल बदला नहीं जा सकता",
+    "errorNameRequired": "नाम आवश्यक है"
+  },
+  "languages": {
+    "english": "अंग्रेज़ी",
+    "hindi": "हिंदी"
+  },
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "sending": "भेज रहा है...",
+    "cancel": "रद्द करें",
+    "create": "बनाएं"
+  },
+  "chat": {
+    "newChat": "नई चैट",
+    "noChats": "अभी तक कोई चैट नहीं",
+    "delete": "हटाएं",
+    "confirmDelete": "क्या आप वाकई इस चैट को हटाना चाहते हैं?",
+    "loginRequired": "चैट सुविधा का उपयोग करने के लिए कृपया लॉगिन करें",
+    "createNewChat": "नई चैट बनाएं",
+    "title": "चैट शीर्षक",
+    "titlePlaceholder": "अपनी चैट के लिए एक शीर्षक दर्ज करें",
+    "category": "श्रेणी",
+    "welcome": "चैट में आपका स्वागत है",
+    "selectOrCreate": "मौजूदा चैट चुनें या नई शुरू करें",
+    "startNewChat": "नई चैट शुरू करें",
+    "startConversation": "संदेश भेजकर बातचीत शुरू करें",
+    "messagePlaceholder": "अपना संदेश यहां टाइप करें...",
+    "send": "भेजें"
+  },
+  "categories": {
+    "HEALTH": "स्वास्थ्य",
+    "AGRICULTURE": "कृषि",
+    "WEATHER": "मौसम",
+    "EDUCATION": "शिक्षा",
+    "COMMUNITY": "समुदाय",
+    "EMERGENCY": "आपातकालीन"
   }
 }

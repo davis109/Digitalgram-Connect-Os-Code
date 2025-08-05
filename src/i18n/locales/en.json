@@ -11,7 +11,12 @@
   "nav": {
     "board": "Notice Board",
     "admin": "Admin Panel",
-    "feedback": "Voice Feedback"
+    "feedback": "Voice Feedback",
+    "home": "Home",
+    "chat": "Chat",
+    "profile": "Profile",
+    "login": "Login",
+    "openMenu": "Open menu"
   },
   "noticeBoard": {
     "title": "Digital Notice Board",
@@ -104,5 +109,83 @@
     "audioFailed": "Failed to play audio",
     "recordingFailed": "Failed to start recording",
     "submissionFailed": "Failed to submit feedback"
+  },
+  "appName": "Digitalgram Connect",
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "loginButton": "Login",
+    "loggingIn": "Logging in...",
+    "errorAllFields": "Please fill in all fields",
+    "errorGeneric": "Login failed. Please try again.",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Register"
+  },
+  "register": {
+    "title": "Register",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "preferredLanguage": "Preferred Language",
+    "registerButton": "Register",
+    "registering": "Registering...",
+    "errorAllFields": "Please fill in all fields",
+    "errorPasswordMatch": "Passwords do not match",
+    "errorPasswordLength": "Password must be at least 6 characters",
+    "errorGeneric": "Registration failed. Please try again.",
+    "haveAccount": "Already have an account?",
+    "loginLink": "Login",
+    "passwordHint": "Must be at least 6 characters"
+  },
+  "profile": {
+    "title": "Your Profile",
+    "email": "Email",
+    "name": "Name",
+    "preferredLanguage": "Preferred Language",
+    "updateButton": "Update Profile",
+    "updating": "Updating...",
+    "updateSuccess": "Profile updated successfully",
+    "updateError": "Failed to update profile",
+    "logoutButton": "Logout",
+    "confirmLogout": "Are you sure you want to logout?",
+    "emailCannotChange": "Email cannot be changed",
+    "errorNameRequired": "Name is required"
+  },
+  "languages": {
+    "english": "English",
+    "hindi": "Hindi"
+  },
+  "common": {
+    "loading": "Loading...",
+    "sending": "Sending...",
+    "cancel": "Cancel",
+    "create": "Create"
+  },
+  "chat": {
+    "newChat": "New Chat",
+    "noChats": "No chats yet",
+    "delete": "Delete",
+    "confirmDelete": "Are you sure you want to delete this chat?",
+    "loginRequired": "Please login to use the chat feature",
+    "createNewChat": "Create New Chat",
+    "title": "Chat Title",
+    "titlePlaceholder": "Enter a title for your chat",
+    "category": "Category",
+    "welcome": "Welcome to the Chat",
+    "selectOrCreate": "Select an existing chat or start a new one",
+    "startNewChat": "Start New Chat",
+    "startConversation": "Start a conversation by sending a message",
+    "messagePlaceholder": "Type your message here...",
+    "send": "Send"
+  },
+  "categories": {
+    "HEALTH": "Health",
+    "AGRICULTURE": "Agriculture",
+    "WEATHER": "Weather",
+    "EDUCATION": "Education",
+    "COMMUNITY": "Community",
+    "EMERGENCY": "Emergency"
   }
 }

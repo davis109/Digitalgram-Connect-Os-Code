@@ -11,6 +11,7 @@ import {
 import { NoticeCategory } from '../types';
 import { useNotices } from '../hooks/useNotices';
 import NoticeCard from './NoticeCard';
+import noticeIcon from '../assets/notice-icon.svg';
 
 const NoticeBoard: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<NoticeCategory | 'all'>('all');
@@ -97,7 +98,7 @@ const NoticeBoard: React.FC = () => {
       <div className="bg-white rounded-lg shadow-md p-6 vibrant-overlay-blue card-hover-effect">
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-3xl font-bold text-gray-900 flex items-center">
-            <Bell className="w-8 h-8 mr-3 text-green-600 enhanced-pulse" />
+            <img src={noticeIcon} alt="Notice" className="w-8 h-8 mr-3 text-green-600 enhanced-pulse" />
             Digital Notice Board
           </h1>
           <div className="flex items-center space-x-2">

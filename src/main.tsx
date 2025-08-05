@@ -4,6 +4,8 @@ import App from './App.tsx';
 import './index.css';
 import './styles/animations.css';
 import { I18nProvider } from './i18n/I18nContext';
+import './utils/axiosConfig';
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
