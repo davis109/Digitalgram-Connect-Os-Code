@@ -85,9 +85,9 @@ const ChatInterface: React.FC = () => {
   }
 
   return (
-    <div className="flex h-[calc(100vh-64px)]">
+    <div className="flex h-[calc(100vh-64px)] bg-gray-50">
       {/* Chat List Sidebar */}
-      <div className="w-64 bg-gray-100 border-r border-gray-200 flex flex-col">
+      <div className="w-72 bg-white border-r border-gray-200 flex flex-col shadow-sm">
         <div className="p-4 border-b border-gray-200">
           <button
             onClick={() => setShowNewChatForm(true)}
@@ -100,9 +100,9 @@ const ChatInterface: React.FC = () => {
         <div className="overflow-y-auto flex-grow">
           {loading && <div className="p-4 text-center">{t('common.loading')}</div>}
           {error && (
-            <div className="p-4 text-center text-red-500 flex items-center justify-center">
-              <AlertTriangle className="w-4 h-4 mr-2" />
-              <span data-testid="error-message">{error}</span>
+            <div className="p-4 m-4 bg-red-50 border border-red-200 rounded-lg text-center text-red-600 flex items-center justify-center">
+              <AlertTriangle className="w-5 h-5 mr-2" />
+              <span data-testid="error-message" className="font-medium">{error}</span>
             </div>
           )}
           
@@ -138,7 +138,7 @@ const ChatInterface: React.FC = () => {
       </div>
 
       {/* Chat Area */}
-      <div className="flex-grow flex flex-col bg-white">
+      <div className="flex-grow flex flex-col bg-white shadow-sm mx-4 my-4 rounded-lg border border-gray-200">
         {showNewChatForm ? (
           <div className="p-4 border-b border-gray-200">
             <h2 className="text-xl font-semibold mb-4">{t('chat.createNewChat')}</h2>

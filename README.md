@@ -48,6 +48,8 @@ npm install
 ```
 
 ### Configuration
+
+#### Backend Configuration
 1. Create a `.env` file in the server directory with the following variables:
 ```
 PORT=5000
@@ -56,6 +58,21 @@ JWT_SECRET=your_jwt_secret
 GEMINI_API_KEY=your_gemini_api_key
 NODE_ENV=development
 ```
+
+#### Frontend Configuration
+1. Create a `.env` file in the project root directory based on `.env.example`:
+```
+# API Configuration
+VITE_API_URL=http://localhost:5000
+
+# Gemini API Configuration
+VITE_GEMINI_API_KEY=your_gemini_api_key_here
+
+# Environment
+NODE_ENV=development
+```
+
+2. Replace `your_gemini_api_key_here` with your actual Gemini API key from Google Cloud Console.
 
 ### Starting the Application
 ```bash
@@ -77,7 +94,19 @@ Browse and filter notices by category. Listen to audio versions of notices.
 Create and manage notices with different priorities and categories.
 
 ### Voice Feedback
-Record and submit audio feedback related to community notices.
+The Voice Feedback system allows users to:
+- Record audio feedback using their device's microphone
+- View real-time audio waveform visualization
+- Automatically transcribe audio to text using Google's Gemini AI
+- Add optional text comments
+- View feedback history with audio playback
+
+Features:
+- Professional UI with rural-themed background images
+- Real-time audio visualization
+- Offline support for feedback storage
+- Multi-language support
+- Error handling and user feedback
 
 ### AI Chat
 Interact with an AI assistant for various categories. Create new chats, send messages, and get AI-powered responses.
